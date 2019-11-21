@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchPhotosController">
+   <center>
+   		<Pane>
+   			<children>
+			     <Button fx:id="searchByDate" layoutX="200.0" layoutY="110.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="40.0" prefWidth="200.0" text="Search by Date Range" />
+			     <Button fx:id="searchBy_1_Tag" layoutX="200.0" layoutY="180.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="40.0" prefWidth="200.0" text="Search by 1 Tag" />
+			     <Button fx:id="cancel" layoutX="14.0" layoutY="359.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+			     <Button fx:id="searchBy_2_Tags" layoutX="200.0" layoutY="248.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="40.0" prefWidth="200.0" text="Search by 2 Tags" />
+			 </children>
+   		</Pane>
+   </center>
+</BorderPane>

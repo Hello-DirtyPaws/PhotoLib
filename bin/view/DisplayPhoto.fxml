@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisplayPhotoController">
+   <right>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="150.0" translateY="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="2.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Date:" />
+            <Label fx:id="date" layoutX="36.0" layoutY="28.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="82.0" />
+            <Label layoutX="2.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Time:" />
+            <Label fx:id="time" layoutX="37.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="82.0" />
+            <Line endX="75.0" layoutX="75.0" layoutY="74.0" startX="-75.0" />
+            <ListView fx:id="tagList" layoutX="-1.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="150.0" />
+            <Label layoutX="60.0" layoutY="78.0" text="Tags" />
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <ImageView fx:id="image" fitHeight="350.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="450.0" translateX="-75.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="8.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" text="Caption: " />
+            <Label fx:id="caption" layoutX="60.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="368.0" />
+            <Button fx:id="close" layoutX="6.0" layoutY="19.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClicked" text="Close" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

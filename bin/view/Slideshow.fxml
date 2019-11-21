@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SlideshowController">
+   <center>
+      <ImageView fx:id="currentImage" fitHeight="400.0" fitWidth="540.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Button fx:id="left" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClick" prefHeight="400.0" prefWidth="30.0" text="&lt;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Button fx:id="right" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClick" prefHeight="400.0" prefWidth="30.0" text="&gt;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
